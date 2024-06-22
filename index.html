@@ -6,8 +6,6 @@
     <title>Unity WebGL Player | IRP1</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -29,10 +27,9 @@
     
     <script type="module">
       // Import the functions you need from the SDKs you need
+      
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
-
-      import firebase from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
       import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';
       
       // TODO: Add SDKs for Firebase products that you want to use
