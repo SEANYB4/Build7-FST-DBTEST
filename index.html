@@ -48,6 +48,9 @@
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
+
+      window.firebase = app; // Make Firebase accessible globally
+      window.firebaseDatabase = getDatabase(app); // Make the database module accessible globally
       
 
       
