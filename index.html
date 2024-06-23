@@ -146,6 +146,12 @@
 
   window.firebaseDatabase = database; // Expose the database to the global window object
 
+  console.log("Hello");
+  set(ref(database, 'users/'), {
+    username: 'sean',
+    email: 'blah'
+  });
+
 
 </script>
 
