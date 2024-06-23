@@ -145,12 +145,16 @@
   const database = getDatabase(app);
 
   window.firebaseDatabase = database; // Expose the database to the global window object
+  window.ref = ref(database);
+  window.set = set;
 
-  console.log("Hello");
-  set(ref(database, 'users/'), {
-    username: 'sean',
-    email: 'blah'
-  });
+
+
+  // console.log("Hello");
+  // set(ref(database, 'users/'), {
+  //   username: 'sean',
+  //   email: 'blah'
+  // });
 
 
 </script>
